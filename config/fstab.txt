@@ -1,0 +1,31 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Mon Jan 29 03:45:53 2024
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+/dev/mapper/cs-root     /                       xfs     defaults        0 0
+UUID=c56cee38-1bb7-4c81-94e6-be5b1b8b0574 /boot                   xfs     defaults        0 0
+/dev/mapper/cs-home     /home                   xfs     defaults        0 0
+/dev/mapper/cs-swap     none                    swap    defaults        0 0
+
+
+#/dev/vg1/lv1            /lv1                   ext4    defaults        1 2
+
+
+# SWAP Configuration
+#
+
+#/dev/cs/swap2		none			swap	defaults	0 0
+#/dev/sdb1		none			swap	defaults	0 0
+#/swap/swapfile          none                    swap    defaults  	 0 0
+
+#//192.168.10.202/share	/mnt/share	cifs	credentials=/root/credentials/smb.txt 0 0
+
+#(7) stratis volume configurations
+#UUID="d9fa8434-87bb-4040-a7e3-6a85e44a89fe" 	/vo1 	xfs	x-systemd.requires=stratis.service	0 0
